@@ -29,11 +29,5 @@ Route::get('/product/edit/{id}', [productController::class, 'edit']);
 Route::post('/product/update',[productController::class,'update'])->name('product/update');
 Route::get('/product/delete/{id}', [productController::class, 'delete']);
 Route::get('/product/search/{id}', [productController::class, 'search'])->name('product/search');
-
-
-
-
-
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
