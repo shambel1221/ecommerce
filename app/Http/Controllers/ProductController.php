@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 use App\Models\product;
 use Illuminate\Http\Request;
 
-class productController extends Controller
+class ProductController extends Controller
 {
         //For testing purpose, use hard coded data, till we design UI
         
   public function register()
   {
-  return view('product.register');
+  return view('product/register');
   }
     function store(Request $request)
     
